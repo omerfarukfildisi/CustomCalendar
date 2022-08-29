@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CalendarCollectionViewCell" id="ZHB-JW-WwG" customClass="CalendarCollectionViewCell" customModule="Calendar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lMV-es-bP3">
+                        <rect key="frame" x="7.5" y="7.5" width="25" height="25"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNV-aG-9Tz">
+                                <rect key="frame" x="9" y="3.5" width="7" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.3411764706" green="0.37254901959999998" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="Jtn-5o-VwO"/>
+                            <constraint firstAttribute="width" constant="25" id="UGo-09-rBI"/>
+                            <constraint firstItem="lNV-aG-9Tz" firstAttribute="centerY" secondItem="lMV-es-bP3" secondAttribute="centerY" id="aX0-yx-Itt"/>
+                            <constraint firstItem="lNV-aG-9Tz" firstAttribute="centerX" secondItem="lMV-es-bP3" secondAttribute="centerX" id="rf4-6j-1r9"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="H2L-9f-lky"/>
+            <constraints>
+                <constraint firstItem="lMV-es-bP3" firstAttribute="centerY" secondItem="ZHB-JW-WwG" secondAttribute="centerY" id="din-On-bs1"/>
+                <constraint firstItem="lMV-es-bP3" firstAttribute="centerX" secondItem="ZHB-JW-WwG" secondAttribute="centerX" id="g8z-Da-SUW"/>
+            </constraints>
+            <connections>
+                <outlet property="containerDay" destination="lMV-es-bP3" id="GMo-tV-GYK"/>
+                <outlet property="dayLabel" destination="lNV-aG-9Tz" id="Opy-tO-cD9"/>
+            </connections>
+            <point key="canvasLocation" x="46" y="73"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
